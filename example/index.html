@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Deakins Example</title>
+        <style>
+            body, html {
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <script type="module">
+            import {Deakins} from '../dist/index.js';
+
+            // Basic canvas setup
+            const canvas = document.createElement(`canvas`);
+            const context = canvas.getContext(`2d`);
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            document.body.appendChild(canvas);
+
+            const camera = new Deakins(context);
+
+            function loop(time) {
+                context.clearRect(0, 0, canvas.width, canvas.height);
+                camera.begin();
+
+                context.fillStyle = `red`;
+                context.fillRect(Math.cos(time * 0.002) * 200, Math.sin(time * 0.001) * 200, 20, 20);
+
+                camera.end();
+                requestAnimationFrame(loop);
+            }
+
+            loop();
+        </script>
+    </body>
+</html>

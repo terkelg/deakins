@@ -1,0 +1,26 @@
+{
+  "name": "deakins",
+  "version": "1.0.0",
+  "description": "Small Canvas 2D viewport management",
+  "module": "dist/index.mjs",
+  "main": "dist/deakins.umd.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "dev": "npx tsc --watch",
+    "build": "npm run build-declarations && rollup -c",
+    "build-declarations": "tsc -d",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist",
+    "types"
+  ],
+  "author": "Terkel Gjervig <terkel@terkel.com>",
+  "repository": "terkelg/deakins",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.9.5",
+    "rollup": "^2.16.1",
+    "rollup-plugin-sucrase": "^2.1.0"
+  }
+}
