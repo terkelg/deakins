@@ -1,5 +1,5 @@
 <p align="center">
-    <img width="300" src="https://github.com/terkelg/deakins/blob/master/deakins.png?raw=true">
+    <img width="400" src="https://github.com/terkelg/deakins/blob/master/deakins.gif?raw=true">
 </p>
 <br>
 
@@ -81,7 +81,7 @@ type: `LookAtMargins`<br>
 default: `{top: 0, right: 0, bottom: 0, left: 0}`
 
 Margins for all sides defined in screen space.
-This is used if the `lazy` option in `lookAt` is `true`. If `true`, the camera only follows the look-at point when the point is within the margins defined in `lookAtMargins`.
+This is used if the `lazy` option in `lookAt` is `true`. If `true`, the camera only follows the look-at point when the point is inside the screen space margin.
 
 ### camera.lookAt(point, [lazy])
 
@@ -100,6 +100,12 @@ default: `[0, 0]`
 #### lazy
 type: `boolean`<br>
 default: `false`
+
+Enable lazy look-at. If true, the camera won't move before the look at point is inside the margin defined in [`options.margin`](#optionsmargin). If false the look-at point stays centered. Below is an illustration of a lazy canera.
+
+<img width="250" src="https://github.com/terkelg/deakins/blob/master/lazy.gif?raw=true">
+
+
 
 ### camera.zoomTo(zoom)
 
