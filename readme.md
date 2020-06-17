@@ -1,5 +1,5 @@
 <p align="center">
-    <img width="300" src="https://github.com/terkelg/deakins/blob/master/deakins.png?raw=true">  
+    <img width="300" src="https://github.com/terkelg/deakins/blob/master/deakins.png?raw=true">
 </p>
 <br>
 
@@ -29,18 +29,16 @@ import { deakins } from 'deakins';
 const canvas = document.createElement(`canvas`);
 const context = this.canvas.getContext(`2d`);
 const camera = new Camera(context);
+const player = new Player();
 
 function loop() {
   camera.begin();
 
   // Look at point in space,
-  // or follow a character ...
-  camera.lookAt(10, 20);
+  camera.lookAt(player.position);
 
   // Zoom
   camera.zoomTo(500);
-
-  // Etc ...
 
   camera.end();
   requestAnimationFrame(loop);
@@ -86,12 +84,12 @@ This is used if the `lazy` option in `lookAt` is `true`. If `true`, the camera o
 
 ### camera.lookAt(point, [lazy])
 
-Move the centre of the viewport to the location specified by the point. 
+Move the centre of the viewport to the location specified by the point.
 
 Call this in the RAF loop to follow a player character for example.
 
 ```js
-camera.moveTo([11, 8]); 
+camera.moveTo([11, 8]);
 ```
 
 #### point
