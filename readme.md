@@ -24,11 +24,12 @@ This module is delivered as:
 ## Usage
 
 ```js
-import { deakins } from 'deakins';
+import { Deakins } from 'deakins';
 
 const canvas = document.createElement(`canvas`);
 const context = this.canvas.getContext(`2d`);
-const camera = new Camera(context);
+
+const camera = new Deakins(context);
 const player = new Player();
 
 function loop() {
