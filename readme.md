@@ -1,5 +1,5 @@
 # Deakins
-> Small Canvas 2D viewport management.
+> Small Canvas 2D Camera
 
 Small and simple 2D viewport/camera management for Canvas
 named after the legendary English cinematographer [Roger Deakins](https://www.imdb.com/name/nm0005683/).
