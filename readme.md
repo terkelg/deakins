@@ -1,3 +1,7 @@
+<p align="center">
+    <img src="https://github.com/terkelg/deakins/raw/master/logo.png">  
+</p>
+
 # Deakins
 > Small Canvas 2D viewport management.
 
