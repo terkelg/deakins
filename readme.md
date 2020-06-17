@@ -1,12 +1,13 @@
 <p align="center">
-    <img src="https://github.com/terkelg/deakins/raw/master/logo.png">  
+    <img width="300" src="https://github.com/terkelg/deakins/blob/master/deakins.png?raw=true">  
 </p>
+<br>
 
 # Deakins
 > Small Canvas 2D Camera
 
-Small and simple 2D viewport/camera management for Canvas
-named after the legendary English cinematographer [Roger Deakins](https://www.imdb.com/name/nm0005683/).
+Small and simple 2D viewport/camera management for Canvas.
+Named after the legendary English cinematographer [Roger Deakins](https://www.imdb.com/name/nm0005683/) known for Blade Runner, Fargo, No Country for Old Men and The Shawshank Redemption.
 
 
 ## Install
