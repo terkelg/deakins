@@ -120,7 +120,7 @@ type: `number`<br>
 default: `1000`
 
 
-### camera.being()
+### camera.begin()
 
 On each render pass call `.begin()` before drawing to set the right transforms.
 
