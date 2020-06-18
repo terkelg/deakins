@@ -74,7 +74,7 @@ This value is used to immitate a FOV camera effect as you zoom.
 type: `boolean`<br>
 default: `false`
 
-By defualt, everything scales based on the width of the canvas. When `true`, the aspect ratio is defined by the height instead.
+By default, everything scales based on the width of the canvas. When `true`, the aspect ratio is defined by the height instead.
 
 #### options.margin
 type: `LookAtMargins`<br>
