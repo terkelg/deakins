@@ -68,7 +68,7 @@ Type: `CanvasRenderingContext2D`<br>
 type: `number`<br>
 default: `1000`
 
-This value is used to immitate a FOV camera effect as you zoom.
+This value is used to imitate a FOV camera effect as you zoom.
 
 #### options.flipAspectRatio
 type: `boolean`<br>
@@ -101,7 +101,7 @@ default: `[0, 0]`
 type: `boolean`<br>
 default: `false`
 
-Enable lazy look-at. If true, the camera won't move before the look at point is inside the margin defined in [`options.margin`](#optionsmargin). If false the look-at point stays centered. Below is an illustration of a lazy canera.
+Enable lazy look-at. If true, the camera won't move before the look at point is inside the margin defined in [`options.margin`](#optionsmargin). If false the look-at point stays centered. Below is an illustration of a lazy camera.
 
 <img width="250" src="https://github.com/terkelg/deakins/blob/master/lazy.gif?raw=true">
 
